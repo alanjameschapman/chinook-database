@@ -79,4 +79,3 @@ base.metadata.create_all(db)
 tracks = session.query(Track).filter_by(Composer="Queen")
 for track in tracks:
     print(track.TrackId, track.Name, track.AlbumId, track.Composer, sep=" | ")
-    
